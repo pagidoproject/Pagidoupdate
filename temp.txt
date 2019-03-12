@@ -1,0 +1,224 @@
+<div id="section3" class="container-fluid">
+  <section class="banner-bottom-wthree py-md-5 py-3" id="services">
+        <div class="container">
+            <div class="inner-sec-w3layouts py-md-5 py-3">
+                <h3 class="tittle text-center mb-lg-5 mb-3">
+                    <span data-blast="color" style="font-size: 30px">Our</span>Services</h3>
+                <div class="web">
+                <div class="row choose-main mb-lg-4">
+                    <div class="col-lg-6 galsses-grid-right">
+                        <!----
+                        <h5>
+                            <span class="post-color">21</span> May 2018</h5>
+                         <---->
+                        <h4 class="post mt-3" style="font-size: 20px;">Search Engine Optimization</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p class="mt-3" style="font-size: 15px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/si1.jpg" alt="" class="img-fluid" height="100%">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"></span>
+
+                                    </h3>
+                                    <p data-blast="color"><b>Search Engine Optimization</b></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="web">
+                <div class="row choose-main my-lg-4 my-3">
+                    <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/sli2.png" alt="" class="img-fluid">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"></span>
+
+                                    </h3>
+                                    <p data-blast="color"><b>Web Development</b></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 galsses-grid-right mt-4">
+
+                        <h4 class="post mt-3" style="font-size: 20px;">Web Development</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                         <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+              <div class="web">
+                <div class="row choose-main mb-lg-4">
+                    <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                        <!----
+                        <h5>
+                            <span class="post-color">21</span> May 2018</h5>
+                         <---->
+                        <h4 class="post mt-3" style="font-size: 20px;">Social Media Marketing</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/sli3.jpg" alt="" class="img-fluid">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"></span>
+
+                                    </h3>
+                                    <p data-blast="color"><b>Social Media Marketing</b></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="web">
+                <div class="row choose-main mt-lg-4 mt-3">
+                    <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/sli4.jpg" alt="" class="img-fluid">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"><b></b></span>
+
+                                    </h3>
+                                    <p data-blast="color"> <a href="#" style="color:#4cd137"><b>Lead Generation</b></a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right mt-4 last-gd">
+
+                        <h4 class="post mt-3" style="font-size: 20px;">Lead Generation</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                       <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+
+              <div class="web">
+                <div class="row choose-main mb-lg-4">
+                    <div class="col-lg-6 galsses-grid-right">
+                        <!----
+                        <h5>
+                            <span class="post-color">21</span> May 2018</h5>
+                         <---->
+                        <h4 class="post mt-3" style="font-size: 20px;">Content Marketing</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p class="mt-3" style="font-size: 15px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/content.jpg" alt="" class="img-fluid" height="100%">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"></span>
+
+                                    </h3>
+                                    <p data-blast="color"><b>Content Marketing</b></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <div class="web">
+                <div class="row choose-main mt-lg-4 mt-3">
+                    <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/ppc.jpg" alt="" class="img-fluid">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"><b></b></span>
+
+                                    </h3>
+                                    <p data-blast="color"> <a href="#" style="color:#4cd137"><b>Pay Per Click</b></a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right mt-4 last-gd">
+
+                        <h4 class="post mt-3" style="font-size: 20px;">Pay Per Click</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                       <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+
+                  <div class="web">
+                <div class="row choose-main mb-lg-4">
+                    <div class="col-lg-6 galsses-grid-right">
+                        <!----
+                        <h5>
+                            <span class="post-color">21</span> May 2018</h5>
+                         <---->
+                        <h4 class="post mt-3" style="font-size: 20px;">Email Marketing</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p class="mt-3" style="font-size: 15px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <div class="log-in mt-md-4 mt-3">
+                            <a class="btn text-uppercase" data-blast="bgColor" href="#">
+                             Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 galsses-grid-right">
+                        <div class="galsses-grid-left">
+                            <figure class="effect-lexi">
+                                <img src="C:\ekta\Pagido\images/email-marketing-.jpg" alt="" class="img-fluid" height="100%">
+                                <figcaption>
+                                    <h3>
+                                        <span data-blast="color"></span>
+
+                                    </h3>
+                                    <p data-blast="color"><b>Email Marketing</b></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

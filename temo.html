@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagido</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/D8B2B2D5-25D9-F94B-B365-5380EB3E6569/main.js" charset="UTF-8"></script>  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="C:\ekta\Pagido/ss.css">
+<script type="text/javascript" href="C:\ekta\Pagido/ss.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	//mixins
+@mixin align {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+//presentation 
+.container {
+  position: relative;
+  .page-title, .page-sub-title  {
+    color: white;
+    text-align: center;
+  }
+  .page-title {
+    margin: 30px 0 5px;
+    font-size: 30px;
+  }
+  .page-sub-title {
+    font-weight: 100;
+    margin: 0 0 30px 0;
+    font-size: 23px;
+  }
+}
+
+//variables
+$pink: #DE6262;
+$dark: #333741;
+$peach: #FFB88C;
+$green: #52c234;
+
+
+html {
+  background: linear-gradient(45deg, $pink 10%, $peach 90%);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card-container {
+  perspective: 1000;
+  margin: 0 auto 50px;
+  width: 400px;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  transition-delay: 0.15s;
+  transition: 0;
+}
+
+.front {
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+  opacity: 0;
+  padding-top: 60px;
+  backface-visibility: visible;
+  background: $dark;
+  color: white;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transition: 0.5s;
+	transform-style: preserve-3d;
+  &:hover {
+    transform: rotateY(180deg);
+    .front {
+      opacity: 0;
+    }
+    .back {
+      opacity: 1;
+    }
+  }
+}
+
+.sub-title {
+  color: $pink;
+  animation: slide-in 0.75s;
+  animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  animation-timing-function: cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0 0 5px 0;
+}
+
+.title {
+  color: $dark;
+  animation: slide-in-slow 0.75s;
+  animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  animation-timing-function: cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.synopsis {
+  color: $pink;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+p {
+  color: rgba(white, 0.85);
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 35px;
+}
+
+.btn {
+  border: 1px solid $peach;
+  border-radius: 5px;
+  background: transparent;
+  display: inline-block;
+  font-size: 17px;
+  padding: 8px 20px 9px 15px;
+  color: $peach;
+  transition: 0.5s;
+  margin: 0 2px 0;
+  font-weight: 100;
+  &.secondary {
+    border-color: $pink;
+    color: $pink;
+      &:hover {
+        background: $pink;
+      }
+  }
+  &:hover {
+    cursor: pointer;
+    background: $peach;
+    color: white;
+  }
+  i {
+    margin: 0 5px 0;
+  }
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: slide-in-right 1.25s;
+  animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  animation-timing-function: cubic-bezier(0.625, 0.075, 0.110, 1.165);
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+
+//animation
+@keyframes slide-in {
+  0% {
+    transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-in-slow {
+  0% {
+    transform: translate3d(-300px, 0, 0);
+  }
+  20% {
+    transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translate3d(400px, 0, 0);
+  }
+  30% {
+    transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+	<div class="wrapper">
+  <h1>Parallax Flipping Cards</h1>
+  <div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+						<div class="inner">
+							<p>Diligord</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="url(https://unsplash.it/511/511/)">
+						<div class="inner">
+							<p>Rocogged</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+						<div class="inner">
+							<p>Strizzes</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+						<div class="inner">
+							<p>Clossyo</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/504/504/">
+						<div class="inner">
+							<p>Rendann</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+						<div class="inner">
+							<p>Reflupper</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+						<div class="inner">
+							<p>Acirassi</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+						<div class="inner">
+							<p>Sohanidd</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+ </div>
+</body>
+</html>
