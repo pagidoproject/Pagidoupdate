@@ -112,9 +112,8 @@ $(function(){
 <!--about-->
 <section>
 <div id="about">
-          <h1 class="section-title">About Us</h1>
-        
 
+<h1 class="section-title">About Us</h1>
 <div class="abt" style="font-size: 17px;">
 <p class="sec"> <center>"PAGIDO Consulting was established on 15th Sept 2018, by two MBA graduate.They both are alumni of IBS Dehradun (batch 2015-17)</center></p>
 <p class="sec1""><center>They did there specialization in <strong>marketing research, strategic planning and financial consulting</strong>.</center></p>
@@ -145,7 +144,7 @@ $(function(){
             <div class="service-icon">
               <i class="fas fa-area-chart"aria-hidden="true"></i>
             </div>
-            <div class="service-title"><a href="servciesdig.html" style="color: black; text-decoration: none;">Digital Marketing</a></div>
+            <div class="service-title"><a href="/Pagido/servciesdig.html" style="color: black; text-decoration: none;">Digital Marketing</a></div>
             <div class="service-desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
             </div>
@@ -155,7 +154,7 @@ $(function(){
             <div class="service-icon">
               <i class="fas fa-code"></i>
             </div>
-            <div class="service-title"><a href="servicesweb.html" style="color: black; text-decoration: none;">Web Development</a></div>
+            <div class="service-title"><a href="file:///C:/xampp/htdocs/Pagido/servicesweb.html" style="color: black; text-decoration: none;">Web Development</a></div>
             <div class="service-desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
             </div>
