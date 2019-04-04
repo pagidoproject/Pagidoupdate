@@ -43,7 +43,7 @@
 <body>
 <!--navbar-->
 <div class="wrapper" style=" background-image: url('images/bg.jpg');">
-
+     
   <nav class="navbar navbar-transparent navbar-fixed-top" id="shr">
     <div class="container-fluid">
        <div class="navbar-header mobile-header">
