@@ -18,7 +18,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="Best Digital Marketing and Website Designing services in Thane,Mumbai|Pagido Consulting pvt ltd.
   We are a website developing(bold) and a digital marketing(bold) company in Thane,India. Providing creative and customized online solutions including SEO(bold) ,PPC(bold) and Social Media">
-  <meta name="keywords" content="digital marketing agency in thane,digital marketing company in mumbai
+  <meta name="keywords" content="digital marketing agency, digital marketing agency in thane,digital marketing company in mumbai
   ,digital marketing agency in mumbai,advertising agencies in mumbai,Digital Marketing Agency,Social Media Agency,
   Search Engine Optimization,SEO services,PPC marketing,Web development company,web design company in thane
   ,corporate website design,Dynamic Website,E-commerce Website,Redesigning Website">
