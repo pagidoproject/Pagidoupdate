@@ -1,8 +1,24 @@
+body {
+  overflow-x: hidden;
+}
 
+.navbar-nav {
+  margin-left: 110px;
+}
 
 @media screen and (max-width:768px) {
   .wrapper{
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .navbar-nav {
+    margin-left: 0;
+  }
+  .mobile-header {
+    float: left;
+    font-size: 24px;
   }
 }
 
@@ -14,8 +30,7 @@
 .wrapper{
    width: 100%;
    height: 100vh;
-   
-  -webkit-background-size: cover;
+   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -28,97 +43,53 @@
 
 
   .navbar{
-    background-color: #000;
+    ;
     border-radius: 0;
-    border:0;
-    padding: 10px 0px;
-    margin-bottom:0px;
+    border: 0;
+    padding: 20px 0px;
+    margin-bottom: 0px;
     opacity: 1;
+    height: 50px;
 
   }
-.navbar .nav li{
+.navbar .nav li a{
   font-size: 20px;
-  color: #000;
+  color: #fff;
   background: none;
   border:none;
   text-decoration: unset;
+  font-weight: bolder;
+
+
 }
 .navbar .navbar-brand{
-  font-size: 20px;
+  font-size: 35px;
+  color: #fff;;
+  font-weight: bolder;
 }
 
-.navbar .navbar-inverse{
-  background: none;
-  border:none;
-}
 
-.navbar .nav .active a, .navbar .nav .active a:hover{
+
+.navbar .nav li a:hover{
   background: none;
-  text-decoration: underline;
-  color: white;
+  color: #c8d6e5;
 }  
-.navbar .nav a.sli:hover, .navbar .nav a.sli:active {
-  font-size: 125%;
-}
-
-.navbar .nav a.abt:hover, .navbar .nav a.sli:active {
-  font-size: 125%;
-}
-
-.navbar .nav a.ser:hover, .navbar .nav a.sli:active {
-  font-size: 125%;
-}
-
-.navbar .nav a.blg:hover, .navbar .nav a.sli:active {
-  font-size: 125%;
-}
-
-.navbar .nav a.con:hover, .navbar .nav a.sli:active {
-  font-size: 125%;
-}
-
-.navbar a.navbar-brand:hover, .navbar .nav a.navbar-brand:active {
-  font-size: 200%;
-}
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
-  color: #fff;
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  /* Guarantees that the dropdown will display on top of any content. */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
 }
 
 /* jQuery Styles
 ===================================*/
 .navbar-scroll {
-
   padding: 0;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-  transition-duration: 0.6s;
-}
-.nav-dropdown-scroll {
+  /*box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); */
+  transition-duration: 2s;
+  background-color:#000;
   
-  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
-}
-.navbar .nav li{
-  font-size: 20px;
-  color: #fff;
-  background: none;
-  border:none;
-  text-decoration: unset;
-}
-.navbar .navbar-brand{
-  font-size: 20px;
-}
-
-.navbar .navbar-inverse{
-  background: none;
-  border:none;
-}
-
-
-  
-.globe {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -239,36 +210,6 @@ h1.main, p.demos {
   -ms-transform: scale(5);
   transform: scale(5);
 }
-.sp-circle-link {
-  position: absolute;
-  left: 50%;
-  bottom: 100px;
-  margin-left: -50px;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
-  background: #fff;
-  color: black;
-  font-size: 25px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-animation: fadeInRotate 1s linear 16s backwards;
-  -moz-animation: fadeInRotate 1s linear 16s backwards;
-  -ms-animation: fadeInRotate 1s linear 16s backwards;
-  animation: fadeInRotate 1s linear 16s backwards;
-  -webkit-transform: scale(1) rotate(0deg);
-  -moz-transform: scale(1) rotate(0deg);
-  -o-transform: scale(1) rotate(0deg);
-  -ms-transform: scale(1) rotate(0deg);
-  transform: scale(1) rotate(0deg);
-}
-.sp-circle-link:hover {
-  background: #273c75;
-  color: white;
-}
-
 /**/
 
 @-webkit-keyframes blurFadeInOut {
@@ -448,12 +389,9 @@ h1.main, p.demos {
 
 /*explain*/
  .txt {
-  background-color: #bdc3c7;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-top: -70px;
-  opacity: 0.9;
+    background:#7ed6df;  
+    position: relative;
+    top: -50px;
 
 }
 
@@ -510,9 +448,12 @@ h3.tittle span {
 .line {
     display: inline-block;
     height: 2px;
-    width: 60px;
+    width: 200px;
     padding: 0;
     background:#00a8e0;
+}
+.border{
+  width: 100px;
 }
 .booking-form input[type="text"], .booking-form input[type="submit"] {
     color: #777;
@@ -851,6 +792,13 @@ span.post-color {
   text-transform: uppercase;
   font-size: 30px;
 }
+.section-title1{
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+}
 .border{
   width: 160px;
   height: 2px;
@@ -932,7 +880,7 @@ span.post-color {
 a:link,
 a:active,
 a:visited{
-  color:rgba(255,255,255,1);
+  color:rgb(166, 198, 206);
 }
 
 a:hover{
@@ -963,8 +911,14 @@ a:hover{
   min-width: 100%;
   
 }
-
-.team-member figcaption p {
+.team-member p{
+  font-size: 26px;
+}
+.team-member figcaption article {
+  font-size: 16px;
+  
+}
+.team-member figcaption{
   font-size: 16px;
 }
 
@@ -1013,7 +967,7 @@ a:hover{
 .team-member figure:hover figcaption {
   visibility: visible;
   color: #fff;
-  background: rgba(230, 78, 62, 0.9);
+  background: rgba(229, 152, 102, 0.9);
   /* Primary color, can be changed via colors.css */
   
   height: 100%;
@@ -1151,6 +1105,7 @@ h3 {
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
+/*faq end*/
 
 /*contact*/
 @import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css");
@@ -1381,7 +1336,8 @@ h3 {
 }
 
 .footer-distributed .footer-icons{
-  margin-top: 25px;
+  margin-top: 40px;
+      margin: 0px!important;
 }
 
 .footer-distributed .footer-icons a{
@@ -1396,9 +1352,9 @@ h3 {
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
+  
   margin-right: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

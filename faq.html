@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136499182-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136499182-1');
+</script>
   <title>Pagido</title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -20,40 +29,56 @@
 
   <!-------Script------>
   <script type="text/javascript" href="./js/index.js"></script>
-  <script type="text/javascript" href="./js/bootstrap.js"></script>
-  <script type="text/javascript" href="./js/bootstrap.min.js"></script>
-  <!------ends script------>
+    <!------ends script------>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 <!--navbar-->
 
-<nav class="navbar navbar-inverse navbar-transparent navbar-fixed-top" id="shr">
+<nav class="navbar navbar-inverse navbar-transparent navbar-fixed-top" id="shr" style="background-color: #40739e">
   <div class="container-fluid">
-     <div class="navbar-header">
-      <a class="navbar-brand" href="#" id="logo"><b> Pagido Consultancy</b></a>
-         </div>
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-    
-    </div>
+      <div class="navbar-header">
+      <div class="box">
+      </div>
+          <a class="navbar-brand" href="#" id="logo"><b> Pagido Consulting</b></a>
+      </div>
+      <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+        
+        </div>
     
       <div class="collapse navbar-collapse" id="myNavbar">
         
-         <ul class="nav navbar-nav pull-right" style="color:#000">
-          <li class="active"><a class="sli"  href="#section1">Home</a></li>
-          <li><a class="abt" href="#section2">About</a></li>
-          <li><a class="ser" href="#section3">Services</a></li>      
-          <li><a class="blg" href="#section4">Blog</a></li>
-          <li><a class="con" href="#section5">Contacts</a></li>
+          <ul class="nav navbar-nav pull-right">
+          <li><a class="sli" href="index.php">Home</a></li>
+          <li><a class="abt" href="index.php#about">About</a></li>
+          <li><a class="ser" href="index.php#services">Services</a></li>      
+          <li><a class="blg" href="blog.php">Blog</a></li>
+          <li><a class="con" href="index.php#contact">Contacts</a></li>
         </ul>
       </div>
       </div>
-</nav>   
+</nav>
+<script type="text/javascript">
+  //Change pos/background/padding/add shadow on nav when scroll event happens 
+$(function(){
+  var navbar = $('.navbar');
+  
+  $(window).scroll(function(){
+    if($(window).scrollTop() <= 40){
+      navbar.removeClass('navbar-scroll');
+    } else {
+      navbar.addClass('navbar-scroll');
+    }
+  });
+});
+
+</script>
+
 <!--end of nav---->
 
 <!--faq---->
@@ -174,7 +199,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));</script>
                 <a href="#" data-toggle="tooltip "  data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a> 
                 <a href="#" data-toggle="tooltip auto"  data-placement="top" title="Linkedin"><i class="fab fa-linkedin"></i></a> 
                 <a href="#" data-toggle="tooltip auto" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a> 
-                <a href="#" data-toggle="tooltip auto"  data-placement="top" title="Pinterest"><i class="fab fa-pinterest"></i></a>
           </div>
   
         </div>
