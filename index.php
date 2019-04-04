@@ -7,7 +7,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+                              
   gtag('config', 'UA-136499182-1');
 </script>
   <title>Pagido</title>
