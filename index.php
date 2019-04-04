@@ -9,16 +9,15 @@
   gtag('js', new Date());
                               
   gtag('config', 'UA-136499182-1');
-</script>
+</script>                                
   <title>Pagido</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta description="Best Digital Marketing and Website Designing services in Thane,Mumbai|Pagido Consulting pvt ltd.
-  We are a website developing(bold) and a digital marketing(bold) company in Thane,India. Providing creative and customized online solutions including SEO(bold) ,PPC(bold) and Social Media ...(bold)
-  ">
+  <meta name="description" content="Best Digital Marketing and Website Designing services in Thane,Mumbai|Pagido Consulting pvt ltd.
+  We are a website developing(bold) and a digital marketing(bold) company in Thane,India. Providing creative and customized online solutions including SEO(bold) ,PPC(bold) and Social Media">
   <meta name="keywords" content="digital marketing agency in thane,digital marketing company in mumbai
   ,digital marketing agency in mumbai,advertising agencies in mumbai,Digital Marketing Agency,Social Media Agency,
   Search Engine Optimization,SEO services,PPC marketing,Web development company,web design company in thane
