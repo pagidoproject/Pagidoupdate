@@ -2,17 +2,17 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-nav {
+/*.navbar-nav {
   margin-left: 110px;
-}
-
+  }
+*/
 @media screen and (max-width:768px) {
   .wrapper{
     max-width: 100%;
   }
 }
 
-@media screen and (max-width:767px) {
+/*@media screen and (max-width:767px) {
   .navbar-nav {
     margin-left: 0;
   }
@@ -21,7 +21,7 @@ body {
     font-size: 24px;
   }
 }
-
+*/
 @media screen and (max-width:480px) {
   .wrapper{
     max-width: 100%;
@@ -42,7 +42,7 @@ body {
 }
 
 
-  .navbar{
+/*  .navbar{
     ;
     border-radius: 0;
     border: 0;
@@ -59,11 +59,9 @@ body {
   border:none;
   text-decoration: unset;
   font-weight: bolder;
-
-
 }
 .navbar .navbar-brand{
-  font-size: 35px;
+  font-size: 25px;
   color: #fff;;
   font-weight: bolder;
 }
@@ -77,23 +75,27 @@ body {
 .nav-dropdown {
   position: absolute;
   z-index: 1;
-  /* Guarantees that the dropdown will display on top of any content. */
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  display: none;
+*/  /* Guarantees that the dropdown will display on top of any content. */
+ 
+/*  display: none;
 }
 
+.dropdown-menu li a:hover{
+  background: #000;
+}
+*/
 /* jQuery Styles
 ===================================*/
-.navbar-scroll {
-  padding: 0;
+/*.navbar-scroll {
+  padding: 3px;
   /*box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); */
-  transition-duration: 2s;
+/*  transition-duration: 2s;
   background-color:#000;
   
 }
 a {
   text-decoration: none;
-}
+}*/
 h1.main, p.demos {
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
@@ -386,13 +388,14 @@ h1.main, p.demos {
   }
 }
 
-
+.abt{
+  padding: 40px;
+}
 /*explain*/
  .txt {
-    background:#7ed6df;  
+    background-color:#4973AB;  
     position: relative;
-    top: -50px;
-
+    top: -70px;
 }
 
 .text{
@@ -1379,6 +1382,7 @@ h3 {
   }
 
 }
+
 
 
 /*footer ends*/
