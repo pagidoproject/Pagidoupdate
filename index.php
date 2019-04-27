@@ -16,12 +16,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Best Digital Marketing and Website Designing services in Thane, Mumbai|Pagido Consulting pvt ltd.
-  We are a website developing and a digital marketing company in Thane, India. Providing creative and customized online solutions including SEO,PPC and Social Media">
-  <meta name="keywords" content="digital marketing agency, digital marketing agency in thane, digital marketing company in mumbai
-  , digital marketing agency in mumbai, advertising agencies in mumbai, Digital Marketing Agency, Social Media Agency,
-  Search Engine Optimization, SEO services, PPC marketing, Web development company, web design company in Thane
-  ,corporate website design, Dynamic Website, E-commerce Website, Redesigning Website">
+  <meta name="description" content="Best Digital Marketing and Website Designing services in Thane,Mumbai|Pagido Consulting pvt ltd.
+  We are a website developing(bold) and a digital marketing(bold) company in Thane,India. Providing creative and customized online solutions including SEO(bold) ,PPC(bold) and Social Media">
+  <meta name="keywords" content="digital marketing agency in thane,digital marketing company in mumbai
+  ,digital marketing agency in mumbai,advertising agencies in mumbai,Digital Marketing Agency,Social Media Agency,
+  Search Engine Optimization,SEO services,PPC marketing,Web development company,web design company in thane
+  ,corporate website design,Dynamic Website,E-commerce Website,Redesigning Website">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,8 +31,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-------CSS------>
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-  <!-- <link rel="stylesheet" href="css/animate.css"> -->
-  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/service.css">
     <!-------CSS Ends Here------>
 
   <!-------Script------>
@@ -43,34 +42,80 @@
 <body>
 <!--navbar-->
 <div class="wrapper" style=" background-image: url('images/bg.jpg');">
-     
-  <nav class="navbar navbar-transparent navbar-fixed-top" id="shr">
-    <div class="container-fluid">
-       <div class="navbar-header mobile-header">
-        
-              <a class="navbar-brand" href="#" id="logo"><b> Pagido Consulting</b></a>
-      </div>
-      <div class="navbar-header text-right">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="padding: 2px solid black;">
-            <span class="icon-bar" style="width: 50px; color: #fff;">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-      
-      </div>
-      
-        <div class="collapse navbar-collapse" id="myNavbar">
-          
-          <ul class="nav navbar-nav" style="float: right;">
-            <li><a class="sli" href="index.php">Home</a></li>
-            <li><a class="abt" href="#about">About</a></li>
-            <li><a class="blg" href="blog.php">Blog</a></li>
-            <li><a class="con" href="#contact">Contacts</a></li>
-            <li><a class="log" href="login.php">Login&nbsp;<i class="fa fa-user"></i></a></li>
-          </ul>
+
+  <header>
+      <div class="menu-container">
+        <div class="grt-menu-row">
+          <div class="grt-menu-logo">
+            <a href="#"  class="grt-logo">Pagido Consulting</a>
+          </div>
+          <div class="grt-menu-right">
+            <nav>
+              <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
+              <ul class="grt-menu text-primary">
+                <li class="active"><a href="www.paindex.php">Home</a></li>
+                <li><a href="index.php#about">About</a></li>
+                <li class="grt-dropdown"><a>Services</a>
+                  <ul class="grt-dropdown-list">
+                    <li><a href="servciesdig.html">Digital Marketing</a></li>
+                    <li><a href="servicesweb.html">Web Development</a></li>
+                    <li><a href="serviceshr.html">HR Recruitment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="index.php#contact">Contact</a></li>               
+              </ul>
+            </nav>
+          </div>
         </div>
-    </div>
-  </nav>   
+      </div>
+    </header>
+    <script type="text/javascript">
+
+
+// Create a function for mobile version
+(function( $ ){
+  $.fn.grtmobile = function () {
+    if ($(window).width() < 768) {
+      $('.grt-mobile-button').on('click', function(){
+        $(this).toggleClass("grt-mobile-button-open");
+        $("ul.grt-menu").toggleClass("open-grt-menu ");
+        $("html, body").toggleClass("body-overflow");
+      });
+      $('li.grt-dropdown').on('click', function(e){
+        $(this).toggleClass("active-dropdown");
+      });
+    }
+  }
+})( jQuery );
+
+// Initialize and check for mobile
+$.fn.grtmobile();
+
+// On resize window check for mobile
+
+var resizeTimeout;
+$(window).resize(function(){
+  if(!!resizeTimeout){ clearTimeout(resizeTimeout); }
+  resizeTimeout = setTimeout(function(){
+    $.fn.grtmobile();
+  },200);
+});
+
+// Add shadow on scroll after 60px
+$(window).scroll(function(e){
+   if ($(this).scrollTop() > 60){
+       $('header').addClass('scrolled');
+   } else {
+       $('header').removeClass('scrolled');
+   }
+});
+
+// Prevent a href clicks on dropdown category
+$('li.grt-dropdown > a').on('click', function(e){
+  e.preventDefault();
+});
+    </script>
 
 
   <div class="sp-container glob">
@@ -125,7 +170,7 @@ $(function(){
 
 <!--about-->
 <section>
-  <div id="about">
+  <div id="about" class="abt1" style="padding: 50px;">
 
     <h1 class="section-title">About Us</h1>
     <div class="abt" style="font-size: 17px;">
@@ -441,6 +486,7 @@ $(function(){
 
 
        <!--footer-->
+      <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 
 <!-- <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
