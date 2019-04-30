@@ -47,13 +47,13 @@
       <div class="menu-container">
         <div class="grt-menu-row">
           <div class="grt-menu-logo">
-            <a href="#"  class="grt-logo">Pagido Consulting</a>
+            <a href="index.php"  class="grt-logo">Pagido Consulting</a>
           </div>
           <div class="grt-menu-right">
             <nav>
               <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
               <ul class="grt-menu text-primary">
-                <li class="active"><a href="www.paindex.php">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="index.php#about">About</a></li>
                 <li class="grt-dropdown"><a>Services</a>
                   <ul class="grt-dropdown-list">
@@ -474,10 +474,10 @@ $(function(){
           PAGIDO Consulting was established on 15th Sept 2018.</p>
 
         <div class="footer-icons">
-          <a href="#" data-toggle="tooltip auto"  data-placement="top" title="Facebook"><i class="fab fa-facebook-f"></i></a> 
-              <a href="#" data-toggle="tooltip "  data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a> 
-              <a href="#" data-toggle="tooltip auto"  data-placement="top" title="Linkedin"><i class="fab fa-linkedin"></i></a> 
-              <a href="#" data-toggle="tooltip auto" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a> 
+          <a href="https://www.facebook.com/Pagido-consulting-pvt-ltd-341678879993256/" data-toggle="tooltip auto"  data-placement="top" title="Facebook"><i class="fab fa-facebook-f"></i></a> 
+              <a href="https://twitter.com/PagidoL" data-toggle="tooltip "  data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a> 
+              <a href="https://www.linkedin.com/company/pagido-consulting-private-limited/" data-toggle="tooltip auto"  data-placement="top" title="Linkedin"><i class="fab fa-linkedin"></i></a> 
+              <a href="https://www.instagram.com/pagido/" data-toggle="tooltip auto" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a> 
         </div>
 
       </div>
